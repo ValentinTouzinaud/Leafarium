@@ -1,0 +1,244 @@
+:after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Noto sans', sans-serif;
+}
+
+img{ 
+    max-width:100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body{
+    background-color:#F7F7F7;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(3px);
+    z-index: 4;
+}
+
+
+/* Debut de la Navbar */
+a{
+    color: #F7F7F7 !important;
+}
+
+.navbar{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: #F7F7F7;
+    text-shadow: 0 0 2px #2E2E2E, 0 0 2px #2E2E2E, 0 0 2px #2E2E2E;
+    margin-left: -30%;
+}
+
+.navbar .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F7F7F7;
+    text-shadow: 0 0 1px #2E2E2E, 0 0 1px #2E2E2E, 0 0 1px #2E2E2E;
+    margin-left: 2%;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin-top: 10px;
+}
+
+.navbar .nav-links ul li.active a{
+    font-weight: 200;
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+}
+
+/* Fin de la NavBar */
+
+
+/* Debut de la page Formulaire */
+
+.formulAdmin{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fondFormulaire.png");
+    background-size: cover;
+}
+
+.formulAdmin form{
+    height: 30em;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    width: 25em;
+    box-shadow: 7px 11px 15px 7px rgba(0,0,0,0.24);
+}
+
+.formulAdmin .logo{
+    padding-top: 3vh;
+    display: block;
+    margin: auto;
+    width: 10em;
+    border-radius: 100px;
+}
+
+.formulAdmin label{
+    font-size: 1.1em;
+    color: #4E4C4C;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.formulAdmin input{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    padding: 0.4em;
+    display: block;
+    border-radius: 8px;
+    border: white;
+    box-shadow: 0 5px 8px 0 rgba(78,76,76,0.24), 0 8px 15px 0 rgba(78,76,76,0.19);
+}
+
+.formulAdmin button{
+    width: 30%;
+    height: 2em;
+    margin-top: 2em;
+    font-size: 1.2em;
+    letter-spacing: 0.10em;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color:rgb(130, 190, 70);
+    transition: 0.3s;
+}
+
+.formulAdmin #btnRegister{
+    width: 40%;
+}
+
+.formulAdmin button:hover{
+    box-shadow: 0 5px 8px 0 rgba(78,76,76,0.24), 0 8px 15px 0 rgba(78,76,76,0.19);
+}
+
+/* Fin de la page Formulaire */
+
+@media screen and (max-width: 1000px){
+
+    /* Début Navbar */
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .logo{
+        color: #F7F7F7 !important;
+    }
+
+    .navbar a{
+        font-size: 0.8em;
+        margin-left: -1em;
+        color: #F7F7F7 !important;
+    }
+
+
+    .navbar .logo{
+        position: absolute;
+        top: 40px;
+        left: 3vw;
+        z-index: 10;
+        font-size: 1em;
+    }
+
+    .navbar .menu-hamburger{
+        display: block;
+        margin-right: 2vw;
+        width: 1.3em;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #1C1B1B;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 5px 0;
+        font-size: 2em;
+    }
+    /* Fin Navbar */
+}
+
+@media screen and (max-width: 500px){
+    
+    /* Début Navbar */
+    .navbar .logo{
+        font-size: 1.3em;
+        left: 25px;
+    }
+
+    .navbar .menu-hamburger{
+        width: 1.5em;
+    }
+
+    .navbar .nav-links ul li {
+        font-size: 1.5em;
+    }
+    /* Fin Navbar */
+
+    .formulaire form{
+        height: 25em;
+        width: 18em;
+    }
+    
+    .formulaire .logo{
+        width: 7em;
+    }
+}

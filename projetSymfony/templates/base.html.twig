@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{% block title %} Leafarium {% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" href={{ asset('css/style.css')}} >
+            <link rel="stylesheet" href={{ asset('css/reset.css')}} >
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"> LEAFARIUM </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="http://localhost:3000/#/" target="_self" class="nav-link active" onclick="ouvrirBurger()"> Accueil </a></li>
+                    <li><a href="http://localhost:3000/#/register" target="_self" class="nav-link" onclick="ouvrirBurger()"> Register </a></li>
+                    <li><a href="http://localhost:3000/#/login" target="_self" class="nav-link" onclick="ouvrirBurger()"> Login </a></li>
+                    <li><a class="nav-link" href="http://127.0.0.1:8000/admin" @click="ouvrirBurger()"> Admin </a></li>
+                    <li><a href="http://localhost:3000/#/login" target="_self" class="nav-link" onclick="ouvrirBurger()"> Réservation </a></li>
+                    <li><a class="nav-link" href="" @click="deconnexion()"> Déconnexion </a></li>
+                </ul>  
+            </div> 
+            <img src="../img/menu-btn.png" alt="menuHamburger" class="menu-hamburger" onclick="ouvrirBurger()">
+        </nav>
+    </header>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+            <script> 
+
+            function ouvrirBurger(){
+        
+            let navLinks = document.querySelector(".nav-links")
+            navLinks.classList.toggle('mobile-menu')
+            
+            } 
+
+        </script>
+        {% endblock %}
+    </body>
+</html>
