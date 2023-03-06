@@ -23,7 +23,7 @@ Dans une seconde fenêtre, lancer "projetVueJs" et faite la commande:
 
   - npm run dev
   
-Cela vous donne un lien, il vous suffit de cliquer et d'attendre un peu pour que le site charge.  Enkoy :D
+Cela vous donne un lien, il vous suffit de cliquer et d'attendre un peu pour que le site charge.  Enjoy :D
 
 
 ## Si il y a un problème, veuillez me contacter au plus vite.
