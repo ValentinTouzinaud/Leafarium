@@ -7,9 +7,6 @@
             <img src="img/fleche.PNG" alt="fleche">
         </div>
     </section>
-
-
-
     <section class="reservGlr">
         <div v-if="plantesVisible">
             <div class="menuReservation">
@@ -28,9 +25,6 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div class="vignettes">
                 <ul>
                     <li v-for="(p, index) in plantesVisible" :key="index">
