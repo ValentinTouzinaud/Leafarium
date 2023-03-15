@@ -214,6 +214,31 @@ a{
         font-size: 2em;
     }
     /* Fin Navbar */
+
+    /* Debut de la page Formulaire */
+    .formulAdmin form{
+        height: 27em;
+        width: 22em;
+    }
+    
+    .formulAdmin .logo{
+        width: 9em;
+    }
+    
+    .formulAdmin label{
+        margin-bottom: 0.3em;
+    }
+    
+    .formulAdmin input{
+        max-width: 70%;
+        padding: 1.5%;
+    }
+    
+    .formulAdmin button{
+        font-size: 1em;
+        letter-spacing: 0.10em;
+    }
+    /* Fin de la page Formulaire */
 }
 
 @media screen and (max-width: 500px){
@@ -233,12 +258,12 @@ a{
     }
     /* Fin Navbar */
 
-    .formulaire form{
+    .formulAdmin form{
         height: 25em;
         width: 18em;
     }
     
-    .formulaire .logo{
+    .formulAdmin .logo{
         width: 7em;
     }
 }
