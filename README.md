@@ -21,6 +21,7 @@ Dans une première fenêtre de votre IDE, lancer "projetSymfony". Par la suite, 
 Ensuite, il faut installer les dépendances via une commande dans un terminal :
 
   - composer install
+  - php bin/console lexik:jwt:generate-keypair
 
 Enfin dans cette même fenêtre, lancer le serveur PHP via un terminal en écrivant la commande suivante (mais ne cliquer par sur le lien car il ne correspond pas au site "front-end") :
 
