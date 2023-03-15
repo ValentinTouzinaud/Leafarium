@@ -17,7 +17,7 @@ Voici mon site Leafarium ! Celui-ci est une encyclopedie sur le thème de la flo
 ### Symfony
 Ce site est composé de deux parties. Une qui est le "back-end" (projetSymfony) et l'autre le "front-end"(projetVueJs).
 
-Dans une première fenêtre de votre IDE, lancer "projetSymfony". Par la suite, vous devez utiliser une BD pour importer celle du site. Son nom doit être la même que celle utilisé.
+Dans une première fenêtre de votre IDE, lancer "projetSymfony". Par la suite, vous devez utiliser une BD pour importer celle du site. Il vous faut créer un fichier env.local (Important pour lier la BD). Son nom doit être la même que celle utilisé.
 Ensuite, il faut installer les dépendances via une commande dans un terminal :
 
   - composer install
