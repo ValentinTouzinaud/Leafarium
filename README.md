@@ -12,9 +12,9 @@ Voici mon site Leafarium ! Celui-ci est une encyclopedie sur le thème de la flo
   - VueJs
 
 
-### Mode d'emploie :
+## Mode d'emploie :
 
-#### Symfony
+### Symfony
 Ce site est composé de deux parties. Une qui est le "back-end" (projetSymfony) et l'autre le "front-end"(projetVueJs).
 
 Dans une première fenêtre de votre IDE, lancer "projetSymfony". Par la suite, vous devez utiliser une BD pour importer celle du site. Son nom doit être la même que celle utilisé.
@@ -26,7 +26,7 @@ Enfin dans cette même fenêtre, lancer le serveur PHP via un terminal en écriv
 
   - php -S 127.0.0.1:8000 -t public -d display_errors=1
 
-#### VueJs
+### VueJs
 Dans une seconde fenêtre de votre IDE, il vous fait également les dépendances mais du côté de VueJs (Front-end) :
 
   - npm install
